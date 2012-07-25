@@ -37,7 +37,7 @@
 				<key>background</key>
 				<string>#FFFB8C</string>
 				<key>foreground</key>
-				<string>#333333</string>
+				<string>#000000</string>
 			</dict>
 		</dict>		
 		<dict>
@@ -136,7 +136,7 @@
 		    <key>name</key>
 		    <string>CF tag equals signs</string>
 		    <key>scope</key>
-		    <string>meta.tag.inline.cfml, punctuation.separator.key-value.cfml</string>
+		    <string> punctuation.separator.key-value.cfml</string>
 		    <key>settings</key>
 		    <dict>
 		        <key>fontStyle</key>
@@ -162,7 +162,7 @@
 		    <key>name</key>
 		    <string>CF comments</string>
 		    <key>scope</key>
-		    <string>comment.block.cfml, comment.line.cfml, comment.line.double-slash.cfscript, comment.block.cfscript</string>
+		    <string>comment.block.cfml, comment.line.cfml</string>
 		    <key>settings</key>
 		    <dict>
 		        <key>fontStyle</key>
@@ -173,6 +173,92 @@
 			<string>#333333</string>
 		    </dict>
 		 </dict>
+
+		 	
+
+			<dict>
+				<key>name</key>
+				<string>CF comments</string>
+				<key>scope</key>
+				<string>entity.other.attribute-name.html, punctuation.definition.tag.begin.html, punctuation.definition.tag.end.html</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string></string>
+					<key>foreground</key>
+					<string>#960030</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>CF cfscript keywords and operators</string>
+				<key>scope</key>
+				<string>meta.tag.other.html, keyword.control.catch-exception.cfscript, keyword.control.cfscript, keyword.operator.other.cfscript</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string></string>
+					<key>foreground</key>
+					<string>#0000FF</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>CF cfscript string quoted</string>
+				<key>scope</key>
+				<string>string.quoted.double.cfscript</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string></string>
+					<key>foreground</key>
+					<string>#006600</string>
+				</dict>
+			</dict>
+
+			<dict>
+		 		<key>name</key>
+		 		<string>CF Script comments</string>
+		 		<key>scope</key>
+		 		<string>comment.line.double-slash.cfscript, comment.block.cfscript</string>
+		 		<key>settings</key>
+		 		<dict>
+		 			<key>fontStyle</key>
+					<string></string>
+					<key>background</key>
+		 			<string>#FFFFFF</string>
+		 			<key>foreground</key>
+		 			<string>#999999</string>
+		 		</dict>
+		 	</dict>
+
+		 	<dict>
+		 		<key>name</key>
+		 		<string>CF Script comments</string>
+		 		<key>scope</key>
+		 		<string>entity.name.tag.inline.any.html, entity.name.tag.block.any.html, punctuation.definition.tag.begin.html, punctuation.definition.tag.end.html, entity.other.attribute-name.html, meta.tag.inline.any.html</string>
+		 		<key>settings</key>
+		 		<dict>
+		 			<key>fontStyle</key>
+					<string></string>
+		 			<key>foreground</key>
+		 			<string>#000099</string>
+		 		</dict>
+		 	</dict>
+		 	<dict>
+		 		<key>name</key>
+		 		<string>CF Script comments</string>
+		 		<key>scope</key>
+		 		<string>string.quoted.single.html, string.quoted.double.html</string>
+		 		<key>settings</key>
+		 		<dict>
+		 			<key>fontStyle</key>
+					<string></string>
+		 			<key>foreground</key>
+		 			<string>#0000FF</string>
+		 		</dict>
+		 	</dict>
+			
 
 	</array>
 	<key>uuid</key>
