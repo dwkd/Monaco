@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>author</key>
+	<string>Alexandru Trican</string>
+	<key>name</key>
+	<string>Monaco</string>
+	<key>settings</key>
+	<array>
+		<dict>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#FFFFFF</string>
+				<key>caret</key>
+				<string>#000000</string>
+				<key>foreground</key>
+				<string>#000000</string>
+				<key>invisibles</key>
+				<string>#BFBFBF</string>
+				<key>lineHighlight</key>
+				<string>#00000012</string>
+				<key>selection</key>
+				<string>#4D97FF54</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Comment</string>
+			<key>scope</key>
+			<string>comment</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
+				<key>background</key>
+				<string>#FFFB8C</string>
+				<key>foreground</key>
+				<string>#333333</string>
+			</dict>
+		</dict>		
+		<dict>
+			<key>name</key>
+			<string>Function name</string>
+			<key>scope</key>
+			<string>entity.name.function, support.function.any-method</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>bold</string>
+				<key>foreground</key>
+				<string>#0000A2</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Variable</string>
+			<key>scope</key>
+			<string>variable.language, variable.other</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#0000FF</string>
+			</dict>
+		</dict>
+
+		<dict>
+		    <key>name</key>
+		    <string>CF tag name</string>
+		    <key>scope</key>
+		    <string>entity.name.tag.conditional.cfml, entity.name.tag.declaration.cfml, entity.name.tag.other, entity.name.tag.cf, entity.name.tag.inline.other.cfml</string>
+		    <key>settings</key>
+		    <dict>
+		        <key>fontStyle</key>
+		        <string>bold</string>
+		        <key>foreground</key>
+		        <string>#960030</string>
+		    </dict>
+		 </dict>
+		 <dict>
+		    <key>name</key>
+		    <string>CF tag brackets</string>
+		    <key>scope</key>
+		    <string>punctuation.definition.tag.begin.cfml, punctuation.definition.tag.end.cfml, punctuation.definition.tag.begin.ctml, punctuation.definition.tag.end.ctml, punctuation.definition.tag.start.cfml</string>
+		    <key>settings</key>
+		    <dict>
+		        <key>fontStyle</key>
+		        <string></string>
+		        <key>foreground</key>
+		        <string>#960030</string>
+		    </dict>
+		 </dict>
+		 <dict>
+		    <key>name</key>
+		    <string>CF tag attribute</string>
+		    <key>scope</key>
+		    <string>meta.tag.block.other.cfml, entity.other.attribute-name.cfml, entity.other.attribute-name.name.cfml</string>
+		    <key>settings</key>
+		    <dict>
+		        <key>fontStyle</key>
+		        <string></string>
+		        <key>foreground</key>
+		        <string>#960030</string>
+		    </dict>
+		 </dict>
+		 <dict>
+		    <key>name</key>
+		    <string>CF tag attribute quotes</string>
+		    <key>scope</key>
+		    <string>punctuation.definition.string.begin.cfml, punctuation.definition.string.end.cfml</string>
+		    <key>settings</key>
+		    <dict>
+		        <key>fontStyle</key>
+		        <string></string>
+		        <key>foreground</key>
+		        <string>#0000FF</string>
+		    </dict>
+		 </dict>
+		 <dict>
+		    <key>name</key>
+		    <string>CF tag attribute values</string>
+		    <key>scope</key>
+		    <string>string.quoted.double.cfml</string>
+		    <key>settings</key>
+		    <dict>
+		        <key>fontStyle</key>
+		        <string></string>
+		        <key>foreground</key>
+		        <string>#0000FF</string>
+		    </dict>
+		 </dict>
+		 <dict>
+		    <key>name</key>
+		    <string>CF tag equals signs</string>
+		    <key>scope</key>
+		    <string>meta.tag.inline.cfml, punctuation.separator.key-value.cfml</string>
+		    <key>settings</key>
+		    <dict>
+		        <key>fontStyle</key>
+		        <string></string>
+		        <key>foreground</key>
+		        <string>#0000FF</string>
+		    </dict>
+		 </dict>
+		 <dict>
+		    <key>name</key>
+		    <string>CF tag variables</string>
+		    <key>scope</key>
+		    <string>meta.tag.inline.cfml variable.other.cfscript, meta.tag.block.conditional.cfml variable.other.cfscript</string>
+		    <key>settings</key>
+		    <dict>
+		        <key>fontStyle</key>
+		        <string></string>
+		        <key>foreground</key>
+		        <string>#0000FF</string>
+		    </dict>
+		 </dict>
+		 <dict>
+		    <key>name</key>
+		    <string>CF comments</string>
+		    <key>scope</key>
+		    <string>comment.block.cfml, comment.line.cfml, comment.line.double-slash.cfscript, comment.block.cfscript</string>
+		    <key>settings</key>
+		    <dict>
+		        <key>fontStyle</key>
+		        <string></string>
+		        <key>background</key>
+		        <string>#FFFB8C</string>
+			<key>foreground</key>
+			<string>#333333</string>
+		    </dict>
+		 </dict>
+
+	</array>
+	<key>uuid</key>
+	<string>7F5F8934-C29D-C6C3-DE4260840BEFDEF5</string>
+</dict>
+</plist>
