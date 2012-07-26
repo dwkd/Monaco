@@ -8,7 +8,7 @@ To install:
 
 Install Package Control for Sublime http://wbond.net/sublime_packages/package_control
 
-CTRL+SHIFT+P -> search for the Coldfusion package by typing "Coldfusion" and install it
+Preferences -> Package Control -> Install Package -> search for the Coldfusion package by typing "Coldfusion" and install it
 
 Restart Sublime
 
