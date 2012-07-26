@@ -4,7 +4,9 @@ Contains Dreamweaver-like color formatting for CFML  ..and a little nostalgia
 
 To install:
 CTRL+SHIFT+P -> search for the Coldfusion package by typing "Coldfusion" and install it
+
 Restart Sublime
+
 Paste "Monaco" folder in X:\PATH_TO_AppData_FOLDER\Sublime Text 2\Packages\
 
 To activate:
