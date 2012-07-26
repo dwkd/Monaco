@@ -27,7 +27,7 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Comment</string>
+			<string>All Comments</string>
 			<key>scope</key>
 			<string>comment</string>
 			<key>settings</key>
@@ -39,6 +39,21 @@
 				<key>foreground</key>
 				<string>#000000</string>
 			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>HTML Comment,JS Comment</string>
+			<key>scope</key>
+			<string>comment.block.html, comment.line.html, comment.block.js, comment.line.double-slash.js</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
+				<key>background</key>
+				<string>#FFFFFF</string>
+				<key>foreground</key>
+				<string>#999999</string>
+			</dict>
 		</dict>		
 		<dict>
 			<key>name</key>
@@ -48,7 +63,7 @@
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
-				<string>bold</string>
+				<string></string>
 				<key>foreground</key>
 				<string>#0000A2</string>
 			</dict>
@@ -66,21 +81,33 @@
 				<string>#0000FF</string>
 			</dict>
 		</dict>
-
 		<dict>
 		    <key>name</key>
 		    <string>CF tag name</string>
 		    <key>scope</key>
-		    <string>entity.name.tag.conditional.cfml, entity.name.tag.declaration.cfml, entity.name.tag.other, entity.name.tag.cf, entity.name.tag.inline.other.cfml</string>
+		    <string>entity.name.tag.conditional.cfml, entity.name.tag.declaration.cfml, entity.name.tag.other, entity.name.tag.cf, entity.name.tag.inline.other.cfml, punctuation.definition.tag.cf.begin.cfml, punctuation.definition.tag.cf.end.cfml</string>
 		    <key>settings</key>
 		    <dict>
 		        <key>fontStyle</key>
-		        <string>bold</string>
+		        <string></string>
 		        <key>foreground</key>
 		        <string>#960030</string>
 		    </dict>
-		 </dict>
-		 <dict>
+		</dict>
+		<dict>
+		    <key>name</key>
+		    <string>CF Interpolated Hash</string>
+		    <key>scope</key>
+		    <string>meta.name.interpolated.hash.cfml, variable.other.cfscript</string>
+		    <key>settings</key>
+		    <dict>
+		        <key>fontStyle</key>
+		        <string></string>
+		        <key>foreground</key>
+		        <string>#000000</string>
+		    </dict>
+		</dict>
+		<dict>
 		    <key>name</key>
 		    <string>CF tag brackets</string>
 		    <key>scope</key>
@@ -92,8 +119,8 @@
 		        <key>foreground</key>
 		        <string>#960030</string>
 		    </dict>
-		 </dict>
-		 <dict>
+		</dict>
+		<dict>
 		    <key>name</key>
 		    <string>CF tag attribute</string>
 		    <key>scope</key>
@@ -105,8 +132,8 @@
 		        <key>foreground</key>
 		        <string>#960030</string>
 		    </dict>
-		 </dict>
-		 <dict>
+		</dict>
+		<dict>
 		    <key>name</key>
 		    <string>CF tag attribute quotes</string>
 		    <key>scope</key>
@@ -118,8 +145,8 @@
 		        <key>foreground</key>
 		        <string>#0000FF</string>
 		    </dict>
-		 </dict>
-		 <dict>
+		</dict>
+		<dict>
 		    <key>name</key>
 		    <string>CF tag attribute values</string>
 		    <key>scope</key>
@@ -131,8 +158,8 @@
 		        <key>foreground</key>
 		        <string>#0000FF</string>
 		    </dict>
-		 </dict>
-		 <dict>
+		</dict>
+		<dict>
 		    <key>name</key>
 		    <string>CF tag equals signs</string>
 		    <key>scope</key>
@@ -144,12 +171,12 @@
 		        <key>foreground</key>
 		        <string>#0000FF</string>
 		    </dict>
-		 </dict>
-		 <dict>
+		</dict>
+		<dict>
 		    <key>name</key>
 		    <string>CF tag variables</string>
 		    <key>scope</key>
-		    <string>meta.tag.inline.cfml variable.other.cfscript, meta.tag.block.conditional.cfml variable.other.cfscript</string>
+		    <string>meta.tag.inline.cfml, meta.tag.block.conditional.cfml</string>
 		    <key>settings</key>
 		    <dict>
 		        <key>fontStyle</key>
@@ -157,8 +184,8 @@
 		        <key>foreground</key>
 		        <string>#0000FF</string>
 		    </dict>
-		 </dict>
-		 <dict>
+		</dict>
+		<dict>
 		    <key>name</key>
 		    <string>CF comments</string>
 		    <key>scope</key>
@@ -169,97 +196,207 @@
 		        <string></string>
 		        <key>background</key>
 		        <string>#FFFB8C</string>
-			<key>foreground</key>
-			<string>#333333</string>
+				<key>foreground</key>
+				<string>#333333</string>
 		    </dict>
-		 </dict>
-
-		 	
-
+		</dict>		
+		<dict>
+			<key>name</key>
+			<string>CF cfscript keywords and operators</string>
+			<key>scope</key>
+			<string>meta.tag.other.html, keyword.control.catch-exception.cfscript, keyword.control.cfscript, keyword.operator.other.cfscript</string>
+			<key>settings</key>
 			<dict>
-				<key>name</key>
-				<string>CF comments</string>
-				<key>scope</key>
-				<string>entity.other.attribute-name.html, punctuation.definition.tag.begin.html, punctuation.definition.tag.end.html</string>
-				<key>settings</key>
-				<dict>
-					<key>fontStyle</key>
-					<string></string>
-					<key>foreground</key>
-					<string>#960030</string>
-				</dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#0000FF</string>
 			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>CF cfscript string quoted</string>
+			<key>scope</key>
+			<string>string.quoted.double.cfscript</string>
+			<key>settings</key>
 			<dict>
-				<key>name</key>
-				<string>CF cfscript keywords and operators</string>
-				<key>scope</key>
-				<string>meta.tag.other.html, keyword.control.catch-exception.cfscript, keyword.control.cfscript, keyword.operator.other.cfscript</string>
-				<key>settings</key>
-				<dict>
-					<key>fontStyle</key>
-					<string></string>
-					<key>foreground</key>
-					<string>#0000FF</string>
-				</dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#006600</string>
 			</dict>
+		</dict>
+		<dict>
+	 		<key>name</key>
+	 		<string>CF Script comments</string>
+	 		<key>scope</key>
+	 		<string>comment.line.double-slash.cfscript, comment.block.cfscript</string>
+	 		<key>settings</key>
+	 		<dict>
+	 			<key>fontStyle</key>
+				<string></string>
+				<key>background</key>
+	 			<string>#FFFFFF</string>
+	 			<key>foreground</key>
+	 			<string>#999999</string>
+	 		</dict>
+	 	</dict>
+	 	<dict>
+	 		<key>name</key>
+	 		<string>CF Script numeric</string>
+	 		<key>scope</key>
+	 		<string>constant.numeric.cfscript</string>
+	 		<key>settings</key>
+	 		<dict>
+	 			<key>fontStyle</key>
+				<string></string>
+	 			<key>foreground</key>
+	 			<string>#FF0000</string>
+	 		</dict>
+	 	</dict>
+	 	<dict>
+			<key>name</key>
+			<string>HTML Tag and Attributes</string>
+			<key>scope</key>
+			<string>entity.other.attribute-name.html, punctuation.definition.tag.begin.html, punctuation.definition.tag.end.html</string>
+			<key>settings</key>
 			<dict>
-				<key>name</key>
-				<string>CF cfscript string quoted</string>
-				<key>scope</key>
-				<string>string.quoted.double.cfscript</string>
-				<key>settings</key>
-				<dict>
-					<key>fontStyle</key>
-					<string></string>
-					<key>foreground</key>
-					<string>#006600</string>
-				</dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#960030</string>
 			</dict>
-
-			<dict>
-		 		<key>name</key>
-		 		<string>CF Script comments</string>
-		 		<key>scope</key>
-		 		<string>comment.line.double-slash.cfscript, comment.block.cfscript</string>
-		 		<key>settings</key>
-		 		<dict>
-		 			<key>fontStyle</key>
-					<string></string>
-					<key>background</key>
-		 			<string>#FFFFFF</string>
-		 			<key>foreground</key>
-		 			<string>#999999</string>
-		 		</dict>
-		 	</dict>
-
-		 	<dict>
-		 		<key>name</key>
-		 		<string>CF Script comments</string>
-		 		<key>scope</key>
-		 		<string>entity.name.tag.inline.any.html, entity.name.tag.block.any.html, punctuation.definition.tag.begin.html, punctuation.definition.tag.end.html, entity.other.attribute-name.html, meta.tag.inline.any.html</string>
-		 		<key>settings</key>
-		 		<dict>
-		 			<key>fontStyle</key>
-					<string></string>
-		 			<key>foreground</key>
-		 			<string>#000099</string>
-		 		</dict>
-		 	</dict>
-		 	<dict>
-		 		<key>name</key>
-		 		<string>CF Script comments</string>
-		 		<key>scope</key>
-		 		<string>string.quoted.single.html, string.quoted.double.html</string>
-		 		<key>settings</key>
-		 		<dict>
-		 			<key>fontStyle</key>
-					<string></string>
-		 			<key>foreground</key>
-		 			<string>#0000FF</string>
-		 		</dict>
-		 	</dict>
-			
-
+		</dict>
+	 	<dict>
+	 		<key>name</key>
+	 		<string>HTML Tags</string>
+	 		<key>scope</key>
+	 		<string>entity.name.tag.inline.any.html, entity.name.tag.block.any.html, entity.other.attribute-name.id.html, punctuation.separator.key-value.html, punctuation.definition.tag.begin.html, punctuation.definition.tag.end.html, entity.other.attribute-name.html, meta.tag.inline.any.html, entity.name.tag.structure.any.html, entity.name.tag.html</string>
+	 		<key>settings</key>
+	 		<dict>
+	 			<key>fontStyle</key>
+				<string></string>
+	 			<key>foreground</key>
+	 			<string>#000099</string>
+	 		</dict>
+	 	</dict>
+	 	<dict>
+	 		<key>name</key>
+	 		<string>HTML Tag value strings</string>
+	 		<key>scope</key>
+	 		<string>string.quoted.single.html, string.quoted.double.html</string>
+	 		<key>settings</key>
+	 		<dict>
+	 			<key>fontStyle</key>
+				<string></string>
+	 			<key>foreground</key>
+	 			<string>#0000FF</string>
+	 		</dict>
+	 	</dict>
+		<dict>
+	 		<key>name</key>
+	 		<string>HTML Constant Char </string>
+	 		<key>scope</key>
+	 		<string>constant.character.entity.html</string>
+	 		<key>settings</key>
+	 		<dict>
+	 			<key>fontStyle</key>
+				<string>bold</string>
+	 			<key>foreground</key>
+	 			<string>#000000</string>
+	 		</dict>
+	 	</dict>
+		<dict>
+	 		<key>name</key>
+	 		<string>Style tag</string>
+	 		<key>scope</key>
+	 		<string>entity.name.tag.style.html,punctuation.definition.tag.html, source.css.embedded.html</string>
+	 		<key>settings</key>
+	 		<dict>
+	 			<key>fontStyle</key>
+				<string></string>
+	 			<key>foreground</key>
+	 			<string>#85008a</string>
+	 		</dict>
+	 	</dict>
+	 	<dict>
+	 		<key>name</key>
+	 		<string>Style CSS Selector </string>
+	 		<key>scope</key>
+	 		<string>meta.selector.css, punctuation.separator.key-value.css</string>
+	 		<key>settings</key>
+	 		<dict>
+	 			<key>fontStyle</key>
+				<string></string>
+	 			<key>foreground</key>
+	 			<string>#fa41e4</string>
+	 		</dict>
+	 	</dict>
+	 	<dict>
+	 		<key>name</key>
+	 		<string>Style Property Value</string>
+	 		<key>scope</key>
+	 		<string>meta.property-name.css</string>
+	 		<key>settings</key>
+	 		<dict>
+	 			<key>fontStyle</key>
+				<string></string>
+	 			<key>foreground</key>
+	 			<string>#000099</string>
+	 		</dict>
+	 	</dict>
+	 	<dict>
+	 		<key>name</key>
+	 		<string>Style Property Value</string>
+	 		<key>scope</key>
+	 		<string>meta.property-value.css</string>
+	 		<key>settings</key>
+	 		<dict>
+	 			<key>fontStyle</key>
+				<string></string>
+	 			<key>foreground</key>
+	 			<string>#0000FF</string>
+	 		</dict>
+	 	</dict>
+	 	<dict>
+	 		<key>name</key>
+	 		<string>Script tag</string>
+	 		<key>scope</key>
+	 		<string>entity.name.tag.script.html</string>
+	 		<key>settings</key>
+	 		<dict>
+	 			<key>fontStyle</key>
+				<string></string>
+	 			<key>foreground</key>
+	 			<string>#960030</string>
+	 		</dict>
+	 	</dict>
+	 	<dict>
+	 		<key>name</key>
+	 		<string>JS colors</string>
+	 		<key>scope</key>
+	 		<string>storage.type.function.js</string>
+	 		<key>settings</key>
+	 		<dict>
+	 			<key>fontStyle</key>
+				<string>bold</string>
+	 			<key>foreground</key>
+	 			<string>#000099</string>
+	 		</dict>
+	 	</dict>
+	 	<dict>
+	 		<key>name</key>
+	 		<string>JS - function name</string>
+	 		<key>scope</key>
+	 		<string>entity.name.function.js</string>
+	 		<key>settings</key>
+	 		<dict>
+	 			<key>fontStyle</key>
+				<string></string>
+	 			<key>foreground</key>
+	 			<string>#000000</string>
+	 		</dict>
+	 	</dict>
 	</array>
 	<key>uuid</key>
 	<string>7F5F8934-C29D-C6C3-DE4260840BEFDEF5</string>
